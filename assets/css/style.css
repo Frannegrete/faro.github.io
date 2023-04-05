@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+* {
+font-family: 'PT Serif', serif; }
+.redes {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px; }
+    .redes .instagram {
+        width: 50px;
+        height: 50px; }
+    .redes .facebook {
+        width: 50px;
+        height: 50px; }
+h5 {
+    color: #1b5b6e;
+    text-align: center;
+    font-size: 15px;
+    gap: 20px; }
+
+h1 {
+        color: #1b5b6e;
+        text-align: center;
+        font-size: 45px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+h2 {
+        color: #073341;
+        text-align: center;
+        font-size: 30px;
+    }
+
+h3 {
+        color: #073341;
+        text-align: left;
+        font-size: 20px;
+    }
+body {
+    background-color: #f5f5f5;
+    }
+
+ul {
+    list-style-type: none;
+    }
+a {color: #1b5b6e;}
+
+a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    }
+.footer{
+    background-color:#c9d2d0;
+    color:#31231e;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.noticias{
+    display: flex;
+}
+.noticias div:hover {
+    background-color: black;
+    color: white;
+    
+}
+.noticias div:hover h3 {
+    color: white;
+}
+.noticias div {
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+aside {
+    text-align: center;
+}
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;   
+    }
+
+    .noticias {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 30%;
+    }
+}
+
+  /* Estilos para pantallas medianas */
+    @media (max-width: 1023px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+    main section {
+        display: block;
+    }
+    .noticias {
+        display: block;
+    }
+}
+
+  /* Estilos para pantallas pequeñas */
+    @media (max-width: 767px) {
+    header img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    main section h2 {
+        font-size: 1.2rem;
+    }
+    .noticias {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
