@@ -6,24 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="noticias deportivas, el faro deporte local, Puerto Montt">
     <link rel="shortcut icon" href="../assets/img/images.png" type="image/x-icon"><title>deporte</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel ="stylesheet" href="../assets/css/style.css">
-</head>
+    <script type="text/javascript">
+        function displayDateTime() {
+        var currentDate = new Date();
+        var dateString = currentDate.toLocaleString();
+        document.getElementById("datetime").innerHTML = dateString;
+        setTimeout(displayDateTime, 1000); // Actualizar cada 1 segundo
+    }
+    </script>
+    </head>
 <body>
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/img/images.png" alt="Logo" width="100" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./deporte.html">Deporte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./negocios.html">Negocios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <header>
-        <img src="../assets/img/images.png" alt="Logo de El Faro">
         <h1>El Faro: Noticias Locales de Puerto Montt</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./deporte.html">Deporte</a></li>
-                <li><a href="./negocios.html">Negocios</a></li>
-            </ul>
-        </nav>
+        <p id="datetime"></p>
     </header>
 
     <main>
         <h2>Noticias Deportivas</h2>
-            <div class="noticias">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h3> "Zumbatón para celebrar Día de la Madre</h3>
+                    <p>Categoría: Deporte</p>
+                    <p>El Instituto Nacional del Deporte (IND) celebrará el Día de la Madre con una gran zumbatón en la pista atlética del IND. La actividad contará con la participación de reconocidas instructoras de zumba y se espera una gran asistencia de madres. La iniciativa busca promover la actividad física y la vida saludable, además de celebrar su día con una actividad entretenida y llena de energía.</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Torneo interescolar de gimnasia artística</h3>
+                    <p>Categoría: Deporte</p>
+                    <p>El colegio San Francisco Javier organizó un torneo inter escolar de gimnasia artística en el que participaron alumnos de diferentes colegios de la zona. El evento contó con la presencia de destacados entrenadores y jueces de la disciplina, quienes evaluaron las rutinas de los jóvenes gimnastas. La competencia estuvo llena de emoción y adrenalina, y los participantes demostraron un gran nivel de destreza y habilidad en sus presentaciones. Al final del torneo, se entregaron medallas y reconocimientos a los ganadores de las distintas categorías.</p>
+                </div>
+                <div class="carousel-item">
+                    <h3>Nuevas canchas de pádel municipales</h3>
+                    <p>Categoría: Deporte.</p>
+                    <p>La municipalidad de Puerto Montt inauguró dos nuevas canchas de pádel en el Parque Costanera con el objetivo de fomentar la práctica de este deporte en la ciudad. Las canchas cuentan con superficie de césped sintético y están equipadas con iluminación para permitir partidos nocturnos. Además, se brindará un servicio de alquiler de raquetas y pelotas para aquellos que quieran jugar pero no tengan el equipamiento necesario. La apertura de estas nuevas instalaciones deportivas es una gran noticia para los amantes del pádel en la comuna, quienes ahora tendrán un lugar de calidad para disfrutar de este deporte.</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+            
+            <div class="deporte" >
                 <div>
                 <h3>Encuentro Comunal de Fútbol Escolar: Jóvenes Talentos Demostraron su Pasión por el Deporte</h3>
                 <p>Categoría: Deporte</p>
@@ -40,16 +96,30 @@
                 <p>Una multitud de ciclistas se reunieron en la Costanera de Puerto Montt para participar en una cicletada familiar, un evento que buscó promover la actividad física y la vida sana en la comunidad. El recorrido fue apto para todo público y estuvo acompañado por un ambiente de música y diversión. Los organizadores destacaron la importancia de fomentar la actividad física en familia y la necesidad de tener espacios públicos seguros y aptos para el deporte. La cicletada fue un éxito rotundo y se espera que se sigan organizando este tipo de eventos en la comuna.</p>
                 </div>
             </div>
-        
-    <footer class="footer"> 
-        <h5>Síguenos en nuestras redes sociales:</h5>
-        <div class="redes">
-            <a href="https://www.instagram.com"><img class="instagram" src="../assets/img/logoInstagram.png" alt="Logo de Instagram"></a>
-            <a href="https://www.facebook.com"><img class= "facebook" src="../assets/img/logoFacebook.png" alt="Logo de Facebook"></a>
-        </div>
-        </div>
-            <h5>©2023 creado por Francisca Negrete - todos los derechos reservados </h5>
-    </footer>
 
+
+    <p id="totalNoticiasDeportes">Total noticias de deportes:</p>    
+    <footer class="footer bg-white"> 
+        <h5>Síguenos en nuestras redes sociales</h5>
+        <div class="redes">
+            <a href="https://www.instagram.com" target="_blank"><img class="instagram" src="../assets/img/logoInstagram.png" alt="Logo de Instagram"></a>
+            <a href="https://www.facebook.com" target="_blank"><img class= "facebook" src="../assets/img/logoFacebook.png" alt="Logo de Facebook"></a>
+        </div>
+        </div>
+            <h5>©2023 Creado por Francisca Negrete - Todos los derechos reservados </h5>
+            <p><a href="./contacto.html" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Publica con nosotros</a></p>
+        </footer>  
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const seccionDeporte = document.querySelector(".deporte");
+            const articulosDeporte = seccionDeporte.querySelectorAll("div");
+            const cantidadDeporte = articulosDeporte.length;
+            document.getElementById("totalNoticiasDeportes").textContent += " " + cantidadDeporte;
+        });
+    </script>
+    <script type="text/javascript">
+        displayDateTime();
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
-</ht
+</html>
