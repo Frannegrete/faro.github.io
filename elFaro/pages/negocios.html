@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="noticias deportivas, negocios, actualidad">
+    <link rel="shortcut icon" href="../assets/img/images.png" type="image/x-icon"><title>inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel ="stylesheet" href="../assets/css/style.css">
+    <script type="text/javascript">
+        function displayDateTime() {
+        var currentDate = new Date();
+        var dateString = currentDate.toLocaleString();
+        document.getElementById("datetime").innerHTML = dateString;
+        setTimeout(displayDateTime, 1000); // Actualizar cada 1 segundo
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/img/images.png" alt="Logo" width="100" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./deporte.html">Deporte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./negocios.html">Negocios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <h1>El Faro: Noticias Locales de Puerto Montt</h1>
+        <p id="datetime"></p>
+    </header>
+
+    <main>
+        <h2 >Noticias de Negocios y Emprendimientos</h2>
+        <div class="negocios">
+            <div>
+            <h3>Restaurante Local Apuesta por la Sustentabilidad en su Menú</h3>
+                <p>Categoría: Negocios</p>
+                <p>Un restaurante local ha implementado una serie de cambios en su menú y en sus prácticas para fomentar la sustentabilidad y el consumo responsable. El restaurante utiliza ingredientes locales y de temporada, reduce el uso de plásticos y envases desechables, y ofrece opciones veganas y vegetarianas en su menú. Los dueños destacaron su compromiso con la comunidad y el medio ambiente, y su intención de fomentar una cultura gastronómica sustentable en la comuna. El restaurante ha recibido críticas positivas y se espera que inspire a otros negocios locales a seguir su ejemplo.</p>
+            </div> 
+            <div>   
+            <h3>Nueva Tienda de Productos Sustentables en Puerto Montt</h3>
+                <p>Categoría: Negocios</p>
+                <p>Una nueva tienda de productos sustentables abrió sus puertas en la comuna de Puerto Montt. La tienda cuenta con una amplia variedad de productos ecoamigables y reutilizables, como bolsas de tela, cepillos de dientes de bambú y productos de limpieza ecológicos. Los dueños de la tienda destacaron su compromiso con el medio ambiente y su intención de fomentar el consumo responsable y la educación ambiental en la comunidad. La tienda ha sido bien recibida por los consumidores locales que buscan alternativas sostenibles y conscientes.</p>
+            </div>
+            <div>
+            <h3>Veterinaria en Puerto Montt Ofrece Descuentos en Esterilización de Mascotas Callejeras</h3>
+                <p>Categoría: Negocios</p>
+                <p>Una veterinaria en Puerto Montt ha anunciado que ofrecerá descuentos en la esterilización de mascotas callejeras en la región. La iniciativa busca fomentar la esterilización responsable y reducir la población de animales callejeros en la comuna. La veterinaria ha sido reconocida por su compromiso con la causa animal y se espera que esta iniciativa inspire a otros negocios a contribuir al cuidado de los animales en situación de calle.</p>
+            </div>
+        </div>
+    </main>   
+    <p id="totalNoticiasNegocios">Total noticias de negocios:</p>
+    <footer class="footer bg-white"> 
+        <h5>Síguenos en nuestras redes sociales:</h5>
+        <div class="redes">
+            <a href="https://www.instagram.com" target="_blank"><img class="instagram" src="../assets/img/logoInstagram.png" alt="Logo de Instagram"></a>
+            <a href="https://www.facebook.com" target="_blank"><img class= "facebook" src="../assets/img/logoFacebook.png" alt="Logo de Facebook"></a>
+        </div>
+        </div>
+            <h5>©2023 Creado por Francisca Negrete - Todos los derechos reservados </h5>
+            <p><a href="./contacto.html" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Publica con nosotros</a></p>
+        </footer>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const seccionNegocios = document.querySelector(".negocios"); // Corregir el nombre de la clase
+        const articulosNegocios = seccionNegocios.querySelectorAll("div");
+        const cantidadNegocios = articulosNegocios.length;
+        document.getElementById("totalNoticiasNegocios").textContent += " " + cantidadNegocios; // Agregar el número de noticias al párrafo correspondiente
+    });
+</script>
+<script type="text/javascript">
+    displayDateTime();
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+* {
+font-family: 'PT Serif', serif; }
+.redes {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px; }
+    .redes .instagram {
+        width: 50px;
+        height: 50px; }
+    .redes .facebook {
+        width: 50px;
+        height: 50px; }
+h5 {
+    color: #1b5b6e;
+    text-align: center;
+    font-size: 15px;
+    gap: 20px; }
+
+h1 {
+        color: #1b5b6e;
+        text-align: center;
+        font-size: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+h2 {
+        color: #073341;
+        text-align: center;
+        font-size: 40px;
+    }
+
+h3 {
+        color: #073341;
+        text-align: left;
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+body {
+    background-color: #f5f5f5;
+    }
+
+/* ul {
+    list-style-type: none;
+    }
+a {color: #1b5b6e;}
+
+a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    } */
+.footer{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 30px;
+}
+footer a {
+    display: block;
+    text-align: center;
+}
+
+
+.noticias{
+    display: flex;
+}
+.noticias div:hover {
+    background-color: black;
+    color: white;
+    
+}
+.noticias div:hover h3 {
+    color: white;
+}
+.noticias div {
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+.deporte{
+    display: flex;
+}
+.deporte div:hover {
+    background-color: black;
+    color: white;
+    
+}
+.deporte div:hover h3 {
+    color: white;
+}
+.deporte div {
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+.negocios{
+    display: flex;
+}
+.negocios div:hover {
+    background-color: black;
+    color: white;
+    
+}
+.negocios div:hover h3 {
+    color: white;
+}
+.negocios div {
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+aside {
+    text-align: center;
+}
+header {
+    text-align: center;
+    margin: auto;
+}
+header h1 {
+    font-size: 36px;
+    color:#1b5b6e;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 15px;
+    color: #666;
+}
+main{
+    margin-top: 60px ;
+}
+
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+    /* header {
+            text-align: center;
+            margin: auto;
+        } */
+    
+
+    .noticias {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 30%;
+    }
+}
+
+  /* Estilos para pantallas medianas */
+    @media (max-width: 1023px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+    main section {
+        display: block;
+    }
+    .noticias {
+        display: block;
+    }
+}
+
+  /* Estilos para pantallas pequeñas */
+    @media (max-width: 767px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    main section h2 {
+        font-size: 1.2rem;
+    }
+    .noticias {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+#datetime {
+    font-size: 18px;
+    color: #1b5b6e;
+}
+form {
+    width: 60%;
+    margin: auto;
+    border: 1px solid  #1b5b6e;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form label {
+    display: flex;
+    margin-bottom: 10px;
+    width: 80%;
+}  
+
+form input {
+    width: 80 px;
+    padding: 10px;
+}
+
+form button {
+    cursor: pointer;
+}
+
+.formulario {
+    text-align: center;
+    width: 450px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.info {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 1%;
+}
+
+#comentario {
+    font-size: 15px;
+    text-align: center;
+    padding-top: 5%;
+    display: block;
+    margin: auto; }
+
+.boton {
+    font-size: 15px;
+    text-align: center;
+    padding: 1%;
+    margin-top: 4%;
+}
+.anuncios {
+    display: flex;
+    justify-content: space-between;
+}
+
+.anuncios .col {
+    flex-basis: 25%;
+    height: 200px; /* ajusta la altura según tus necesidades */
+}
+
+.anuncios .col img {
+    height: 100%;
+    object-fit: cover;
+}
+
+#carouselExampleFade {
+    margin: 0 auto; 
+    max-width: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border: 2px solid #ccc; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#carouselExampleFade h3 {
+    text-align: center; 
+    font-size: 30px;
+}
+#carouselExampleFade p:first-of-type {
+    text-align: center; 
+}
+
+#carouselExampleFade p:last-of-type {
+    text-align: justify; 
+}
